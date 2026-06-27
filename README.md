@@ -21,37 +21,17 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+-->\
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/raxxoon-in-the-wires/ThreatRoulette">
+    <img src="images/logo.png" alt="ThreatRoulette" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
+  <h3 align="center">ThreatRoulette</h3>
 </div>
 
 
@@ -62,9 +42,6 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -74,8 +51,6 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -85,20 +60,27 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
 
 
 <!-- ABOUT THE PROJECT -->
+## Disclaimer
+
+This tool is intended for authorized security testing only. Use against systems
+you do not own or have explicit written permission to test is illegal.
+
+## Dependencies
+
+Built on top of [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) by Red Canary.
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This project came about while I was building a "Threat-Hunt-in-a-Box" for AWS. I wanted a way to generate random Threat Actor activity for a true test of Threat Hunting capability to challenge myself. By publishing this, I'm hoping to support other people in the industry looking to learn more about Threat Hunting and test their ability to investigate an environment. 
+
+Happy hunting!
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people who have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,14 +90,7 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Next][https://github.com/redcanaryco/atomic-red-team][Next-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,16 +99,15 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- PowerShell 5.1+
+- [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) installed
+- [Invoke-AtomicRedTeam](https://github.com/redcanaryco/invoke-atomicredteam) module
+- MITRE ATT&CK JSON files for your target threat actors
 
 ### Installation
 
@@ -165,9 +139,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+.\AtomicRedAutomation.ps1 -MitreTTPsLocation "C:\AtomicRed\MitreTTPs" -Atomics "C:\AtomicRed\atomics"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,15 +148,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+This wrapper is purely a side project of a side project. No promises that I'll maintain or improve this over time, I hope to see others take an run with it!
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+Potential Changes:
+- [ ] Automated download of Mitre ATT&CK TTPs
+- [ ] More precise attacker emulation
+      
+See the [open issues](https://github.com/raxxoon-in-the-wires/ThreatRoulette/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,8 +176,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
+<a href="https://github.com/raxxoon-in-the-wires/ThreatRoulette/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=raxxoon-in-the-wires/ThreatRoulette" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -217,7 +187,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,7 +198,7 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/raxxoon-in-the-wires/ThreatRoulette](https://github.com/raxxoon-in-the-wires/ThreatRoulette)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,14 +209,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Red Canary]([https://redcanary.com/])
+* [othneildrew - Best-README-Template](https://github.com/othneildrew/Best-README-Template/tree/main)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
