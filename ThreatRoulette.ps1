@@ -7,7 +7,7 @@
     ($MitreTTPsLocation) and randomly selects TTPs which are present in both the AtomicRed Atomics
     folder and the MITRE TTPs for that actor. Alternatively, allows the user to select the Threat Actor and TTPs manually.
 
-    This tool is a wrapper around Atomic Red Team. Atomic Red Team must be installed separately —
+    This tool is a wrapper around Atomic Red Team. Atomic Red Team must be installed separately â€”
     see their repository for installation instructions.
 
 .PARAMETER MitreTTPsLocation
@@ -33,8 +33,8 @@
     Version: 1.0
 
 .LINK
-    AutomicRedAutomator
-    https://[github link to go here].com
+    ThreatRoulette
+    https://github.com/raxxoon-in-the-wires/ThreatRoulette
 
     Atomic Red Team - Red Canary
     https://github.com/redcanaryco/atomic-red-team
