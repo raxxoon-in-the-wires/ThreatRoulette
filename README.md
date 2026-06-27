@@ -27,8 +27,8 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/raxxoon-in-the-wires/ThreatRoulette.png">
-    <img src="images/logo.png" alt="ThreatRoulette" width="80" height="80">
+  <a href="https://github.com/raxxoon-in-the-wires/">
+    <img src="ThreatRoulette.png" alt="ThreatRoulette" width="80" height="80">
   </a>
 
   <h3 align="center">ThreatRoulette</h3>
