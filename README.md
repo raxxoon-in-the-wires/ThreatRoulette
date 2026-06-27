@@ -1,15 +1,15 @@
 # ThreatRoulette
 Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
-
+<br><br>
 <a id="readme-top"></a>
-
 
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/raxxoon-in-the-wires/">
-    <img src="ThreatRoulette.png" alt="ThreatRoulette" width="640" height="320">
+    <img src="ThreatRoulette.png" alt="ThreatRoulette" width="640" height="400">
   </a>
 </div>
+<br>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -31,7 +31,7 @@ Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+<br>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -48,15 +48,15 @@ Built on top of [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team
 
 <div align="center">
   <a href="https://github.com/raxxoon-in-the-wires/">
-    <img src="ThreatRouletteExample.png" alt="ThreatRoulette" width="320" height="240">
+    <img src="ThreatRouletteExample.png" alt="ThreatRoulette" width="400" height="320">
   </a>
 </div>
+<br>
 
 This project came about while I was building a "Threat-Hunt-in-a-Box" for AWS. I wanted a way to generate random Threat Actor activity for a true test of Threat Hunting capability to challenge myself. By publishing this, I'm hoping to support other people in the industry looking to learn more about Threat Hunting and test their ability to investigate an environment. 
 
 Happy hunting! 😄
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -112,7 +112,6 @@ This is an example of how to list things you need to use the software and how to
 
 .\AtomicRedAutomation.ps1 -MitreTTPsLocation "C:\AtomicRed\MitreTTPs" -Atomics "C:\AtomicRed\atomics"
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Parameters
 
@@ -135,7 +134,6 @@ Potential Changes:
       
 See the [open issues](https://github.com/raxxoon-in-the-wires/ThreatRoulette/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -159,25 +157,12 @@ Don't forget to give the project a star! Thanks again!
   <img src="https://contrib.rocks/image?repo=raxxoon-in-the-wires/ThreatRoulette" alt="contrib.rocks image" />
 </a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/raxxoon-in-the-wires/ThreatRoulette](https://github.com/raxxoon-in-the-wires/ThreatRoulette)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
