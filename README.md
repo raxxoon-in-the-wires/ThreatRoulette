@@ -1,39 +1,15 @@
-# AtomicRedAutomator
+# ThreatRoulette
 Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
 
-
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->\
 
 
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/raxxoon-in-the-wires/">
-    <img src="ThreatRoulette.png" alt="ThreatRoulette" width="320" height="240">
+    <img src="ThreatRoulette.png" alt="ThreatRoulette" width="640" height="320">
   </a>
-
-  <h3 align="center">ThreatRoulette</h3>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -70,7 +46,11 @@ Built on top of [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="center">
+  <a href="https://github.com/raxxoon-in-the-wires/">
+    <img src="ThreatRouletteExample.png" alt="ThreatRoulette" width="320" height="240">
+  </a>
+</div>
 
 This project came about while I was building a "Threat-Hunt-in-a-Box" for AWS. I wanted a way to generate random Threat Actor activity for a true test of Threat Hunting capability to challenge myself. By publishing this, I'm hoping to support other people in the industry looking to learn more about Threat Hunting and test their ability to investigate an environment. 
 
