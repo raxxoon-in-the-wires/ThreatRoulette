@@ -1,5 +1,5 @@
 # ThreatRoulette
-Wrapper for the AtomicRedTeam tool that automates Threat Actor emulation
+Wrapper for the AtomicRedTeam tool which automates Threat Actor emulation for Threat Hunting education
 <br><br>
 <a id="readme-top"></a>
 
@@ -55,9 +55,7 @@ Built on top of [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team
 
 This project came about while I was building a "Threat-Hunt-in-a-Box" for AWS. I wanted a way to generate random Threat Actor activity for a true test of Threat Hunting capability to challenge myself. By publishing this, I'm hoping to support other people in the industry looking to learn more about Threat Hunting and test their ability to investigate an environment. 
 
-Happy hunting! 😄
-
-
+<h3 align="center">Happy hunting! 😄 </p>
 
 
 ### Built With
